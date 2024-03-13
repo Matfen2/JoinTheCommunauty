@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px auto;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("assets/pict/SteamBackground.png");
+}
+body .card {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 680px;
+  position: relative;
+  color: azure;
+  border-radius: 5px;
+  border: 2px solid azure;
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+body .card .card-body {
+  text-align: center;
+}
+body .card .card-body .inscribe {
+  padding-bottom: 5px;
+  font-size: 1.6em;
+  font-family: Striker;
+}
+body .card .card-body form label {
+  font-size: 1.8em;
+  font-family: ClassicRobotItalic;
+}
+body .card .card-body form input {
+  width: 40%;
+  margin: 10px;
+  padding: 5px;
+  font-size: 1.4em;
+  border-radius: 5px;
+  font-family: ClassicRobotItalic;
+}
+body .card .card-body form select {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.4em;
+  margin-left: 15px;
+  border-radius: 5px;
+  font-family: ClassicRobotItalic;
+}
+body .card .card-body form #btnInscribe {
+  padding: 9px;
+  margin: 5px auto;
+  color: azure;
+  border-radius: 5px;
+  background: transparent;
+  font-family: Striker;
+  border: 2px solid azure;
+}
+body .card .card-body form #btnInscribe:hover {
+  color: black;
+  background-color: azure;
+}
+
+@font-face {
+  font-family: Striker;
+  src: url(/assets/font/Striker.otf);
+}
+@font-face {
+  font-family: ClassicRobotItalic;
+  src: url(/assets//font/Classic\ Robot\ Italic.otf);
+}/*# sourceMappingURL=style.css.map */

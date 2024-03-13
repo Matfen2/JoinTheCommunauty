@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+// MIXIN && ROOT
+$firstFont: Striker;
+$secondFont: ClassicRobotItalic;
+$firstColor: azure;
+$secondColor: black;
+
+body {
+    margin: 0px auto;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('assets/pict/SteamBackground.png');
+    .card {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        max-width: 680px;
+        position: relative;
+        color: $firstColor;
+        border-radius: 5px;
+        border: 2px solid $firstColor;
+        background-color: $secondColor;
+        transform: translate(-50%, -50%);
+        .card-body {
+            text-align: center;
+            .inscribe {
+                padding-bottom: 5px;
+                font-size: 1.6em;
+                font-family: $firstFont;
+            }
+            form {
+                label {
+                    font-size: 1.8em;
+                    font-family: $secondFont;
+                }
+                input {
+                    width: 40%;
+                    margin: 10px;
+                    padding: 5px;
+                    font-size: 1.4em;
+                    border-radius: 5px;
+                    font-family: $secondFont;
+                }
+                select {
+                    padding: 5px;
+                    cursor: pointer;
+                    font-size: 1.4em;
+                    margin-left: 15px;
+                    border-radius: 5px;
+                    font-family: $secondFont;
+                }
+                #btnInscribe {
+                    padding: 9px;
+                    margin: 5px auto;
+                    color: $firstColor;
+                    border-radius: 5px;
+                    background: transparent;
+                    font-family: $firstFont;
+                    border: 2px solid $firstColor;
+                    &:hover {
+                        color: $secondColor;
+                        background-color: $firstColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@font-face {
+    font-family: $firstFont;
+    src: url(/assets/font/Striker.otf);
+}
+
+@font-face {
+    font-family: $secondFont;
+    src: url(/assets//font/Classic\ Robot\ Italic.otf);
+}
